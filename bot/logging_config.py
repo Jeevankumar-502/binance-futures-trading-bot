@@ -1,0 +1,14 @@
+import logging
+
+# Configure logging settings
+def setup_logging():
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler('bot.log'),
+            logging.StreamHandler()
+        ]
+    )
+
+setup_logging()
