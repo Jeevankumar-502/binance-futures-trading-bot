@@ -1,0 +1,11 @@
+# Trading Bot Logs
+
+### Sample Market and Limit Order Execution Logs
+
+#### Market Orders
+- **2026-04-04 06:20:32 UTC**: Market Buy Order executed for BTC/USDT - Amount: 0.1 BTC at Price: $30000
+- **2026-04-04 06:21:10 UTC**: Market Sell Order executed for ETH/USDT - Amount: 1.0 ETH at Price: $2500
+
+#### Limit Orders
+- **2026-04-04 06:22:00 UTC**: Limit Buy Order placed for LTC/USDT - Amount: 5 LTC at Price: $150.00
+- **2026-04-04 06:22:35 UTC**: Limit Sell Order executed for XRP/USDT - Amount: 100 XRP at Price: $0.55
