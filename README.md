@@ -40,7 +40,7 @@ TESTNET_URL=https://testnet.binancefuture.com
 ```
 
 ### 4. Create Logs Directory
-```bash
+```bash 
 mkdir -p logs
 ```
 
