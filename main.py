@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Main entry point for the trading bot.
+Main entry point for the Binance Futures Trading Bot.
 """
 
 import sys
@@ -182,22 +182,22 @@ Examples:
         print(f"📋 Check logs/trading_bot.log for details")
     
     except ValidationError as e:
-        logger.error(f"Validation error: {str(e)}")
+        logger.error(f"Validation error: {str(e)}", exc_info=True)
         print(f"\n❌ Validation Error: {str(e)}")
         sys.exit(1)
     
     except BinanceAPIError as e:
-        logger.error(f"API error: {str(e)}")
+        logger.error(f"API error: {str(e)}", exc_info=True)
         print(f"\n❌ API Error: {str(e)}")
         sys.exit(1)
     
     except OrderPlacementError as e:
-        logger.error(f"Order placement error: {str(e)}")
+        logger.error(f"Order placement error: {str(e)}", exc_info=True)
         print(f"\n❌ Order Placement Error: {str(e)}")
         sys.exit(1)
     
     except Exception as e:
-        logger.error(f"Unexpected error: {str(e)}")
+        logger.error(f"Unexpected error: {str(e)}", exc_info=True)
         print(f"\n❌ Error: {str(e)}")
         sys.exit(1)
 
